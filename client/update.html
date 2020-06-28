@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script type="text/javascript" src="libs/vue.js"></script>
+        <script type="text/javascript" src="libs/axios.js"></script>
+    </head>
+    <body>
+        <a href="index.html">Home</a>
+        <div id="update">
+            Actualizare proteina cu id-ul: {{ id }} <br>
+            <div class="label">Name:</div>
+            <input type="text" v-model="protein.name"><br><br>
+            <div class="label">Brand:</div>
+            <input type="text" v-model="protein.brand"><br><br>
+            <div class="label">Aroma:</div>
+            <input type="text" v-model="protein.aroma"><br><br>
+            <div class="label">Size:</div>
+            <input type="text" v-model="protein.size"><br><br>
+            <div class="label">Type:</div>
+            <input type="text" v-model="protein.type"><br><br>
+            <div class="label">Price:</div>
+            <input type="text" v-model="protein.price"><br><br>
+            <button  v-on:click="update(protein.id)">Save</button>
+
+            <p>{{message}}</p>
+
+        </div>
+
+        <script src="src/update.js"></script>
+    </body>
+</html>

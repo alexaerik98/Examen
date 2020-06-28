@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/axios.js"></script>
+</head>
+
+<body>
+    <a href="index.html">Home</a>
+    <div id="add">
+        <h1>Adaugare proteina noua</h1>
+        <label>Name</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label>Brand</label>
+        <input type="text" id="brand" name="brand"><br><br>
+        <label>Aroma</label>
+        <input type="text" id="aroma" name="aroma"><br><br>
+        <label>Size</label>
+        <input type="text" id="size" name="size"><br><br>
+        <label>Type</label>
+        <input type="text" id="type" name="type"><br><br>
+        <label>Price</label>
+        <input type="text" id="price" name="price"><br><br>
+        <button v-on:click="addProtein()">Add</button>
+
+    </div>
+    <script src="src/add.js"></script>
+</body>
+
+</html>
